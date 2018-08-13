@@ -3,7 +3,7 @@ body{
 }
 .main {
   font-family:Arial;
-  width:500px;
+  width:600px;
   display:block;
   margin:0 auto;
 }
@@ -32,4 +32,17 @@ h3 {
 }
 .action a:hover{
   background:#000;
+}
+
+
+.image-link {
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in;
+}
+
+/* aligns caption to center */
+.mfp-title {
+  text-align: center;
+  padding: 6px 0;
 }
