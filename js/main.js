@@ -1,11 +1,7 @@
-
-
 $(document).ready(function() {
 
-  //   // начать повторы loader
-  // var timerId = setInterval(function() {
+  // начать повторы loader
   $('.loader').addClass('is-active');
-  // }, 1200);
 
 
   $.getJSON( "https://jsonplaceholder.typicode.com/photos", function( data ) {
@@ -29,22 +25,7 @@ $(document).ready(function() {
   });
 
 
-
-
-
-  // setTimeout(function() {
-  //   $('.loader').fadeOut(500), setTimeout(function() {
-  //     $('body').addClass('is-load');
-
-  //     // остановить повторы loader
-  //     clearInterval(timerId);
-  //   }, 500);
-
-
-
 setInterval(function(){
-
-  
 
     // Slider
      $('.slider-for').slick({
@@ -55,15 +36,15 @@ setInterval(function(){
        asNavFor: '.slider-nav'
      });
      $('.slider-nav').slick({
-       slidesToShow: 3,
+       slidesToShow: 4,
        slidesToScroll: 1,
        asNavFor: '.slider-for',
        dots: true,
        focusOnSelect: true
      });
 
-    // Popup
 
+    // Popup
     $('.with-caption').magnificPopup({
         type: 'image',
         closeBtnInside: false,
@@ -86,12 +67,6 @@ setInterval(function(){
     $('.loader').removeClass('is-active');
 
 }, 1000);
-
-
-
-
-
-
 
 	
 });
